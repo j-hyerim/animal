@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+header{
+    width: 100%;
+}
+
+main{
+    margin-bottom: 10px;
+}
+
+section{
+    width: 1020px;
+    margin: 0px auto;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(29, 26, 23); */
+}
+.lef_con{
+    width: 340px;
+    height: 507px;
+    /* background-color: rgb(122, 113, 100); */
+}
+.cen_con{
+    width: 380px;
+    height: 507px;
+    /* background-color: rgb(128, 80, 18); */
+
+}
+.right_con{
+    width: 260px;
+    height: 507px;
+    /* background-color: rgb(236, 151, 39); */
+
+}
+

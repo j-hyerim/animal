@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아프리카 동물 메디컬 센터 메인페이지</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/layout.css" type="text/css">
+    <link rel="stylesheet" href="./css/base.css" type="text/css">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link rel="stylesheet" href="./css/swiper.css" type="text/css">
+    <script src="./script/swiper.js"></script>
+    <script>
+        //사용자가 접속한 디바이스 체크하기	
+    var mobile_keys=new Array('iPhone','iPod','Android','BlackBerry','Windows Phone','Windows CE','LG','MOT','SAMSUNG','SonyEricsson','Nokia');
+    
+        if(document.URL.match('move_pc_screen')) mobile_keys = null;
+      
+        // URL 파라미터에 'move_pc_screen' 가 포함되어 있을 땐 적용안함
+        //위 배열값 개수만큼 반복하여 검사를 하고 모바일 사용자이면 아래 내용을 실행
+        for( i in mobile_keys){ //in키워드 : 키값이 있으면 true 없으면 false
+        
+        if(navigator.userAgent.match(mobile_keys[i]) != null){
+          location.href = "http://kjhg758595.dothome.co.kr/0831/m_index.html"; 	// 모바일 홈 연결 주소
+            break;
+          }
+        }
+      </script>
+</head>
+<body>
+    <!-- 상단  -->
+    <header>
+        <div class="h_bg">
+            <div class="h_top">
+                <nav class="sns">
+                    <a href="#" title="블로그"><img src="./images/h_lnb_blog.jpg" alt=""></a>
+                    <a href="#" title="트위터"><img src="./images/h_lnb_twitter.jpg" alt=""></a>
+                </nav>
+                <nav class="lnb">
+                    <ul>
+                        <li><a href="login.html" title="login">LOGIN</a></li>
+                        <li><a href="join.html" title="회원가입">JOIN</a></li>
+                        <li><a href="sitemap.html" title="사이트맵">SITEMAP</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="h_bot">
+            
+            <h1>
+                <a href="m_index.html?move_pc_screen=1" title=""><img src="./images/header_logo.jpg" alt="로고"></a>
+            </h1>
+          
+        <div class="nav_wrap">
+            <nav class="gnb">
+                <ul>
+                    <li><a href="intro.html" title="">병원소개</a>
+                        <ul class="sub">
+                            <li><a href="#" title="인사말">인사말</a></li>
+                            <li><a href="#" title="의료진소개">의료진소개</a></li>
+                            <li><a href="#" title="보유장비소개">보유장비소개</a></li>
+                            <li><a href="#" title="오시는길">오시는길</a></li>
+                            <li><a href="#" title="병원소개">병원소개 영상</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="info.html" title="">진료안내</a>
+                        <ul class="sub">
+                            <li><a href="#" title="전문진료과목">전문진료과목</a></li>
+                            <li><a href="#" title="건강검진">건강검진</a></li>
+                            <li><a href="#" title="진료시간">진료시간</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="health.html" title="">질병안내</a>
+                        <ul class="sub">
+                            <li><a href="#" title="증상별">증상별 질병</a></li>
+                            <li><a href="#" title="진료">진료 케이스</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="event.html" title="">홍보센터</a>
+                        <ul class="sub">
+                            <li><a href="#" title="기사">기사/뉴스</a></li>
+                            <li><a href="#" title="수의사봉사활동">수의사봉사활동</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="customer.html" title="">고객지원</a>
+                        <ul class="sub">
+                            <li><a href="#" title="공지사항">공지사항</a></li>
+                            <li><a href="#" title="일상상담">일상상담</a></li>
+                            <li><a href="#" title="진료후기">진료후기</a></li>
+                            <li><a href="#" title="세미나공지">세미나공지</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="community.html" title="">커뮤니티</a>
+                        <ul class="sub">
+                            <li><a href="#" title="애니멀이야기">애니멀이야기</a></li>
+                            <li><a href="#" title="애니멀케어">애니멀케어</a></li>
+                            <li><a href="#" title="애니멀뉴스">애니멀뉴스</a></li>
+                            <li><a href="#" title="이벤트">이벤트</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    </header>
+
+
+    <main>
+        <article class="slide">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#" title="24시동물응급센터"><img src="./images/visula01.jpg" alt="24시동물응급센터" id="logom"></a></div>
+                    <div class="swiper-slide"><a href="#" title="24시동물응급센터"><img src="./images/visual_02.jpg" alt="24시동물응급센터" id="logo2"></a></div>
+                    <div class="swiper-slide"><a href="#" title="24시동물응급센터"><img src="./images/visual2_03.jpg" alt="24시동물응급센터" id="logo3"></a></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- <h2>content</h2> -->
+        </article>
+        <section>
+            <h2>content</h2>
+            <article class="lef_con">
+                <h3>AAMC NEWS</h3>
+                <ul>
+                    <li><a href="#" title="">가곡초등학교 동물병원 견학&수의사 인터뷰</a></li>
+                    <li><a href="#" title="">무료주차안내</a></li>
+                    <li><a href="#" title="">2015 춘계광견병 관납접종 기간안내</a></li>
+                    <li><a href="#" title="">강아지/고양이 호텔 리모델링 완료</a></li>
+                    <li><a href="#" title="">잡지 &#x003C;매거진P&#x003E; 2월호 : 노령견을 위한</a></li>
+                </ul>
+                <img src="./images/a_cs_tel.jpg" alt="전화번호">
+                <img src="./images/a_cs_time.jpg" alt="진료시간">
+            </article>
+            <article class="cen_con">
+                <h3>AAMC 진료케이스</h3>
+                <div class="lnb_con">
+                    <img src="./images/a_center_con.jpg" alt="">
+                    <a href="#" title="navicon1"><img src="./images/subject_bn01.gif" alt="navicon1"></a>
+                    <a href="#" title="navicon2"><img src="./images/subject_bn02.gif" alt="navicon1"></a>
+                    <a href="#" title="navicon3"><img src="./images/subject_bn03.gif" alt="navicon1"></a>
+                    <a href="#" title="navicon4"><img src="./images/subject_bn04.gif" alt="navicon1"></a>
+                    <a href="#" title="navicon5"><img src="./images/subject_bn05.gif" alt="navicon1"></a>
+                    <a href="#" title="navicon6"><img src="./images/subject_bn06.gif" alt="navicon1"></a>
+                    <a href="#" title="navicon7"><img src="./images/subject_bn07.gif" alt="navicon1"></a>
+                    <a href="#" title="navicon8"><img src="./images/subject_bn08.gif" alt="navicon1"></a>
+                </div>
+            </article>
+            <article class="right_con">
+                <h2>content</h2>
+                <img src="./images/a_left_banner01.jpg" alt="a_left_banner01">
+                <img src="./images/a_left_banner02.jpg" alt="a_left_banner01">
+                <img src="./images/a_left_banner03.jpg" alt="a_left_banner01">
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <address>
+                <!-- 아프리카 동물 메디컬 센터 &#x007C; 서울시 000 0000 0000 00-0 &#x007C; 대표원장 000 -->
+            </address>
+            <img src="./images/footer_lnb_address.jpg" alt="footer_lnb_address" id="f_addr">
+            <img src="./images/footer_logo.jpg" alt="footer_logo" id="f_logo">
+        </div>
+           
+    </footer>
+    <p>
+        <a href="http://validator.kldp.org/check?uri=referer"
+          onclick="this.href=this.href.replace(/referer$/,encodeURIComponent(document.URL))"><img
+          src="//validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5" height="15" width="80"></a>
+      </p>
+      <p>
+        <a href="http://css-validator.kldp.org/check/referer">
+            <img style="border:0;width:80px;height:15px"
+                src="//css-validator.kldp.org/images/validate/css-blue"
+                alt="올바른 CSS입니다!" />
+        </a>
+    </p>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 0,
+          effect: "fade", /*페이드아웃, 페이드인효과 */
+          centeredSlides: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+</body>
+</html>
